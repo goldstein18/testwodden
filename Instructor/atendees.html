@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor - Atendees</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- --------------- Font Style sheet --------------- -->
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <!-- --------------- Main Style sheet --------------- -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- --------------- Responsive Style sheet --------------- -->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body class="gym-member-login-page instructor-page attendees-page">
+
+    <div class="main-container">
+        <!-- =================================== Main Content =================================== -->
+        <section class="main-content">
+            <div class="container">
+                <div class="header">
+                    <a href="./view-booking.html">
+                        <i class="fa fa-chevron-left"></i> &nbsp; Bookings
+                    </a>
+                    <p class="text-center"><a href="./birthday-atendee.html">10 / 10</a></p>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>Mariana Ramirez</li>
+                        <li>Carolina Garcia</li>
+                        <li>Veronica Ramirez</li>
+                        <li>Eduwiges Penhos</li>
+                        <li>Andrea Ruiz</li>
+                        <li>Erika Aguilar</li>
+                        <li>Karla Nunez</li>
+                        <li>Diana Colina</li>
+                        <li>Ana Webber</li>
+                        <li>Valeria Torres</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- =============================xxx=== Main Content ===xxx============================= -->
+    </div>
+
+    <!-- =================================== Footer =================================== -->
+    <footer>
+        <div class="container text-center">
+            <div class="logo">
+                <a href="#">
+                    <span>W</span> DEN
+                </a>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="#">hola@woddenstuido.mx</a>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>Wodden Studio 2022 &copy; Todos Ios Derechos Reservados.</p>
+        </div>
+    </footer>
+    <!-- =============================xxx=== Footer ===xxx============================= -->
+
+    <script>
+        const modalWrapper = document.getElementById('modal-wrapper'),
+            modalBox01 = document.getElementById("box-1"),
+            modalBox02 = document.getElementById("box-2"),
+            keepBtn = document.getElementById("keep"),
+            cancelBtn = document.getElementById("cancel"),
+            bookingCancelBtn = document.getElementById("booking-cancel");
+
+        bookingCancelBtn.onclick = () => {
+            modalWrapper.classList.add("active")
+            modalBox01.classList.add("active")
+        }
+
+        cancelBtn.onclick = () => {
+            modalWrapper.classList.remove("active")
+            modalBox01.classList.remove("active")
+        }
+
+        keepBtn.onclick = () => {
+            modalBox01.classList.remove("active")
+            modalBox02.classList.add('active')
+
+            // setTimeout(() => {
+            //     modalWrapper.classList.remove("active")
+            //     modalBox01.classList.remove("active")
+            //     modalBox02.classList.remove("active")
+            // }, 1000);
+        }
+    </script>
+
+
+</body>
+
+</html>

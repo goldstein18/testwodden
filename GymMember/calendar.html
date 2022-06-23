@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Member - Calendar</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- --------------- Font Style sheet --------------- -->
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <!-- --------------- Main Style sheet --------------- -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- --------------- Responsive Style sheet --------------- -->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body class="gym-member-login-page calendar-page">
+
+    <!-- =================================== Footer =================================== -->
+    <header id="header">
+        <div class="logo">
+            <a href="#">
+                <span>W</span> DEN
+            </a>
+        </div>
+    </header>
+    <!-- =============================xxx=== Footer ===xxx============================= -->
+
+
+    <div class="main-container">
+        <!-- =================================== Main Content =================================== -->
+        <section class="main-content">
+            <div class="container">
+                <div class="calendar-wrapper">
+                    <div class="box calendar-box">
+                        <div class="heading">
+                            Encontrar una clase
+                        </div>
+                        <div class="calendar">
+                            <div class="week">L</div>
+                            <div class="week">M</div>
+                            <div class="week">M</div>
+                            <div class="week">J</div>
+                            <div class="week">V</div>
+                            <div class="week">S</div>
+                            <div class="week">D</div>
+                            <div class="day mute">21</div>
+                            <div class="day mute">22</div>
+                            <div class="day mute">23</div>
+                            <div class="day mute">24</div>
+                            <div class="day active">25</div>
+                            <div class="day">26</div>
+                            <div class="day">27</div>
+                            <div class="day">28</div>
+                            <div class="day">29</div>
+                            <div class="day">30</div>
+                            <div class="day">31</div>
+                            <div class="day">01</div>
+                            <div class="day">02</div>
+                            <div class="day">03</div>
+                        </div>
+                    </div>
+                    <div class="box class-container">
+                        <div class="heading">
+                            Sábado, Julio 20
+                        </div>
+                        <div class="class-wrapper">
+                            <div class="class">
+                                <div class="class-info">
+                                    <h4 class="time">9:30 am - 10:30 am</h4>
+                                    <h4 class="name">Fit Body</h4>
+                                    <h4 class="tutor"><small>Sofia Nunez</small></h4>
+                                    <h4 class="extra">5 disponibles de 10</h4>
+                                </div>
+                                <div class="">
+                                    <a href="./class-booked.html"><button class="btn">Reservar</button></a>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="detail-heading">
+                                    <span class="see-details"> > Ver detalles </span>
+                                    <span class="see-less"> Esconder detalles</span>
+                                </div>
+                                <div class="body">
+                                    <h3>Detalles de la clase</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquid itaque
+                                        voluptatibus saepe totam assumenda consequuntur deserunt optio laborum numquam.
+                                    </p>
+                                    <hr>
+                                    <h3>Detalles de la coach</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti id ducimus
+                                        vitae aspernatur eveniet fugit laboriosam, voluptates molestias nihil ut
+                                        reiciendis veniam placeat incidunt numquam vero mollitia aperiam quibusdam quo
+                                        illum enim laborum eius quas. Blanditiis iusto fuga explicabo, ad sed enim minus
+                                        in nisi nostrum eius labore assumenda ex?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =============================xxx=== Main Content ===xxx============================= -->
+    </div>
+
+
+    <!-- =================================== Footer =================================== -->
+    <footer>
+        <div class="container text-center">
+            <div class="logo">
+                <a href="#">
+                    <span>W</span> DEN
+                </a>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="#">hola@woddenstuido.mx</a>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>Wodden Studio 2022 &copy; All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- =============================xxx=== Footer ===xxx============================= -->
+
+    <script>
+        const detailHeadings = document.querySelectorAll(".detail-heading");
+        for (const heading of detailHeadings) {
+            heading.onclick = (event) => {
+                const detailWrapper = event.target.parentNode.parentNode
+                console.log(detailWrapper.classList.toggle('active'))
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

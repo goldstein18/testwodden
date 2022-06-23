@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor - Booking</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- --------------- Font Style sheet --------------- -->
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <!-- --------------- Main Style sheet --------------- -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- --------------- Responsive Style sheet --------------- -->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body class="gym-member-login-page booking-page instructor-page instructor-booking-page">
+
+    <!-- =================================== Main Content =================================== -->
+    <section class="main-content">
+        <div class="container">
+            <h4 class="text-center">Book Class</h4>
+            <form action="">
+                <div class="form-group">
+                    <label for="">Name of the class</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label for="">Class description</label>
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">When</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label for="">At What time</label>
+                    <input type="time">
+                </div>
+                <div class="form-group form-radio-group">
+                    <input type="radio" name="radio" id="">
+                    <label for="radio">Book for every week, same day same time</label>
+                </div>
+                <div class="form-group">
+                    <button class="btn" id="booking">Book class</button>
+                </div>
+            </form>
+            <div class="modal-wrapper" id="modal-wrapper">
+                <div class="modal-box" id="box-1">
+                    <h3>Are you sure you want to book this class?</h3>
+                    <div class="buttons">
+                        <button id="cancel" class="btn keep"> No</button>
+                        <button id="keep" class="btn  cancel"><a href="./class-booked.html">Yes</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============================xxx=== Main Content ===xxx============================= -->
+
+    <script>
+
+
+        const form = document.querySelector("form");
+        form.onsubmit = (e) => {
+            e.preventDefault();
+        }
+
+        const modalWrapper = document.getElementById('modal-wrapper'),
+            modalBox01 = document.getElementById("box-1"),
+            keepBtn = document.getElementById("keep"),
+            cancelBtn = document.getElementById("cancel"),
+            bookingBtn = document.getElementById("booking");
+
+        bookingBtn.onclick = () => {
+            modalWrapper.classList.add("active")
+            modalBox01.classList.add("active")
+        }
+
+        cancelBtn.onclick = () => {
+            modalWrapper.classList.remove("active")
+            modalBox01.classList.remove("active")
+        }
+    </script>
+
+
+</body>
+
+</html>

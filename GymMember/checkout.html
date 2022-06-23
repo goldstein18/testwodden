@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Member - Checkout</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- --------------- Font Style sheet --------------- -->
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <!-- --------------- Main Style sheet --------------- -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- --------------- Responsive Style sheet --------------- -->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body class="gym-member-login-page checkout-page">
+
+    <!-- =================================== Header =================================== -->
+    <header>
+        <div class="logo">
+            <a href="#">
+                <span>W</span>DEN
+            </a>
+        </div>
+    </header>
+    <!-- =============================xxx=== Header ===xxx============================= -->
+
+
+    <!-- =================================== Main Content =================================== -->
+    <section class="main-content">
+        <div class="container">
+            <h4>Resumen</h4>
+            <div class="box-wrapper">
+                <div class="box">
+                    <h5>Concepto</h5>
+                    <span>1 clase</span>
+                </div>
+                <div class="box">
+                    <h5>Precio</h5>
+                    <span style="font-size: 13px;">170 MXN</span>
+                </div>
+            </div>
+            <div class="box-wrapper">
+                <div class="box">
+                    <h5>Subtotal</h5>
+                    <h5>Total</h5>
+                </div>
+                <div class="box">
+                    <h5>150 MXN</h5>
+                    <h5>150 MXN</h5>
+                </div>
+            </div>
+            <form action="./member-dashboard.html" class="form-wrapper">
+                <div class="form-group">
+                    <label for="">Correo electrónico</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label for="">Información de la tarjeta</label>
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="text" placeholder="1234 1234 1234 1234">
+                        </div>
+                        <div class="col-6 col-6-first">
+                            <input type="text" placeholder="MM/AA">
+                        </div>
+                        <div class="col-6 col-6-second">
+                            <input type="text" placeholder="CVC">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Nombre en la tarjeta</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label for="">País</label>
+                    <select name="" id="">
+                        <option value="Mexico">Mexico</option>
+                        <option value="Bangladesh"></option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <a href="/user-dashboard.html"><button type="submit" class="btn">Buy</button></a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- =============================xxx=== Main Content ===xxx============================= -->
+
+</body>
+
+</html>
